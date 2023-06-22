@@ -1,0 +1,86 @@
+@keyframes movingCity {
+    12% {
+        transform: scale(3) translateX(2rem);
+    }
+
+    25% {
+        transform: scale(3) translateX(2rem);
+    }
+
+    41% {
+        transform: scale(3) translateX(2rem) translateY(3rem);
+    }
+
+    53% {
+        transform: scale(3) translateX(-2rem) translateY(3rem);
+    }
+
+    58% {
+        transform: scale(3) translateX(-2rem) translateY(3rem);
+    }
+
+    69% {
+        transform: scale(3) translateX(-2rem) translateY(6rem);
+    }
+
+    73% {
+        transform: scale(3) translateX(-2rem) translateY(6rem);
+    }
+
+    88% {
+        transform: scale(3) translateX(-2rem) translateY(6rem);
+    }
+
+    96% {
+        transform: scale(1);
+    }
+}
+
+@keyframes enterImg {
+    from {
+        transform: rotate(30deg);
+        filter: blur(5px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: rotate(0);
+    }
+}
+
+@keyframes leaveImg {
+    from {
+        transform: rotate(0);
+        filter: blur(0);
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(5px);
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes pEnter {
+    from {
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes trEnter {
+    from {
+        transform: scaleY(0) rotate(5deg);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1)  rotate(0deg);
+        opacity: 1;
+    }
+}

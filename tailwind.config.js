@@ -11,6 +11,12 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          "map-view":"url('/assets/map.jpg')",
+      },
+      colors: {
+        'main-blue': '#056CF2',
+        'main-green': '#04BF8A',
+        'background-main': '#F7F8FA',
       },
     },
   },

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: .15s ease;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* input[type="number"] {
+  appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+:root {
+  --main-blue: #056CF2;
+  --app-orange: #F26835;
+  --app-green: #04BF8A;
+}
+
+.animatedBackground {
+  animation: movingCity 40s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+.enter {
+  animation: enterImg .75s linear forwards;
+}
+
+.leave {
+  animation-delay: .75s;
+  animation: leaveImg 1s linear forwards;
+}
+
+
+.pEnter {
+  animation: pEnter .25s ease-in-out forwards;
+}
+
+.trEnter {
+  animation: trEnter .5s ease-in-out forwards;
+  transform-origin: top;
+}
+
+.cut-text {
+  max-width: 5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

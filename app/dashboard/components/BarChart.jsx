@@ -4,8 +4,8 @@ export default function BarChart() {
     return (
         <div className="min-w-[15rem] sm:min-w-[15rem] sm:flex-1 md:flex-none flex-1 flex flex-col rounded-md p-4 bg-white border shadow-sm hover:shadow-md hover:scale-[1.025]">
             <div className="w-full gap-2 grid grid-cols-3 flex-1 place-items-end overflow-hidden bg-background-main pt-2 px-2 rounded-t-lg">
-                <Bar per={65} position={"2nd"}/>
-                <Bar per={55} position={"1st"} />
+                <Bar per={35} position={"2nd"}/>
+                <Bar per={65} position={"1st"} />
                 <Bar per={25} position={"3rd"} />
             </div>
             <section className="p-4 flex flex-col items-center text-center">
